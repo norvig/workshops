@@ -609,6 +609,11 @@ export default function SocraticDialogue({
                   onClick={() => setActiveTab('source')}
                 >
                   📚 Source
+                  {activeTab === 'python' && (
+                    <span className="ml-2 text-xs text-slate-500">
+                      (View the source material)
+                    </span>
+                  )}
                 </button>
               </div>
 
